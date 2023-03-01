@@ -1,0 +1,17 @@
+<p>
+  <ion-content>
+    <ion-item>
+      <ion-label>Port</ion-label>
+      <ionic-selectable
+        item-content
+        [(ngModel)]="port"
+        [itemValueField]="'id'"
+        [itemTextField]="'name'"
+        [items]="ports"
+        [canSearch]="true"
+        (onChange)="portChange($event)"
+      >
+      </ionic-selectable>
+    </ion-item>
+  </ion-content>
+</p>
